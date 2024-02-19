@@ -1,0 +1,30 @@
+:root {
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+/* Error Screen */
+.error-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error-details-container h2 {
+  font-size: 30px !important;
+}
+
+.error-details-container pre {
+  display: none;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=message%></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="error-details-container">
+        <h2><%= error.status %></h2>
+        <p><%=message%></p>
+        <pre><%= error.stack %></pre>
+    </div>
+</body>
+
+</html>
