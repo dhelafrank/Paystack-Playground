@@ -44,7 +44,7 @@ app.use(function (err, req, res, next) {
 
 
 app.listen(Configs.port, async () => {
-// await connectToDatabase()
+await connectToDatabase("You are good to go!")
 console.log(`Server is now listening on port ${Configs.port}`)
 })
 module.exports = app;
