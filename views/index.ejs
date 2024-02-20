@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://kit.fontawesome.com/63483fd584.js" crossorigin="anonymous"></script>
   <title><%= title %></title>
 </head>
+
 <body>
   <h1><%= title %></h1>
   <%-contents%>
-  <p class="center disclaimer"><strong>Note:</strong> This project is for demonstration purposes only and should not be used in production environments without proper security measures.</p>
+  <p class="center disclaimer"><strong>Note:</strong> This project is for demonstration purposes only and should not be
+    used in production environments without proper security measures.</p>
+
+
+  <div class="modal-container">
+    <div class="modal-window">
+      <div class="modal-heading-container"><h2 class="modal-heading">Modal Heading</h2><i class="fa-solid fa-xmark"></i></div>
+
+
+      <form class="customer-details-form">
+        <input type="text" name="fname" id="firstName" placeholder="First Name" required>
+        <input type="text" name="lname" id="lastName" placeholder="Last Name" required>
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <button class="btn">Proceed to Payment</button>
+      </form>
+
+    </div>
+  </div>
+
+
 </body>
+
 </html>

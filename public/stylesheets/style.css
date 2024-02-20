@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("/stylesheets/components/product-cards.css") all;
+@import url("/stylesheets/components/modal.css") all;
 
 :root {
   --light-color: #bebebe;
@@ -22,7 +23,10 @@ body {
   font: 14px var(--default-font-family);
   box-sizing: border-box;
 }
-
+button{
+  border: none;
+  cursor: pointer;
+}
 h1 {
   color: var(--primary-color);
 }
@@ -47,7 +51,7 @@ p.disclaimer {
   background: var(--primary-color);
   color: #fff;
   font-family: var(--default-font-family);
-  padding: .3rem 1rem;
+  padding: .5rem 1.3rem;
   font-weight: 600;
 }
 
@@ -70,7 +74,13 @@ p.disclaimer {
 .info {
   padding: 0 15dvw;
 }
-
+input{
+  border-radius: 10px;
+  border: none;
+  padding: .5rem .3rem;
+  font-family: var(--default-font-family);
+  outline: none;
+}
 /* Media Queries */
 @media (max-width:750px) {
   :root {

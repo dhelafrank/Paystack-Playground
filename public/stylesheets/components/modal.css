@@ -1,0 +1,21 @@
+.modal-container {
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: color-mix(in srgb, var(--dark-color), #ffffff3b 50%);
+    backdrop-filter: blur(3px);
+}
+
+.modal-container .modal-heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-container .modal-heading-container i{
+    cursor: pointer;
+}
