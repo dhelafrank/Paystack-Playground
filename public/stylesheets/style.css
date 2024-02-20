@@ -1,31 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("/stylesheets/components/product-cards.css") all;
 
 :root {
-  background-color: #0f0f0f;
-  color: #f0f0f0;
+  --light-color: #bebebe;
+  --dark-color: #0f0f0f;
+  --primary-color: #0EA5DB;
+  --default-font-family: "Poppins", Helvetica, Arial, sans-serif;
+
+  background-color: var(--dark-color);
+  color: var(--light-color);
 }
 
+
+/* Reset */
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 5dvh 5dvh 0 5dvh;
-  font: 14px "Poppins", Helvetica, Arial, sans-serif;
+  font: 14px var(--default-font-family);
   box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
-}
-p.center{
-  text-align: center;
-}
-p.disclaimer{
-  position: fixed;
-  bottom: 0;
+h1 {
+  color: var(--primary-color);
 }
 
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+
+/* Elements */
+p.center {
+  text-align: center;
+}
+
+p.disclaimer {
+  margin: 5rem;
+}
+
+.btn {
+  border-radius: 15px;
+  background: var(--primary-color);
+  color: #fff;
+  font-family: var(--default-font-family);
+  padding: .3rem 1rem;
+  font-weight: 600;
+}
 
 /* Error Screen */
 .error-details-container {
@@ -43,9 +67,25 @@ p.disclaimer{
   display: none;
 }
 
+.info {
+  padding: 0 15dvw;
+}
+
 /* Media Queries */
 @media (max-width:750px) {
+  :root {
+    --light-color: #a5a5a5;
+  }
+
   body {
     margin: 3dvh 5dvh 0 5dvh;
+  }
+
+  .info {
+    padding: 0 3dvw;
+  }
+
+  p.disclaimer {
+    margin: 1rem 0;
   }
 }

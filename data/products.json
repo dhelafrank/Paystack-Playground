@@ -1,93 +1,28 @@
-[
-    {
-      "_id": "40f2c61b-d9a5-4ff1-8447-1969d2dc19b3",
-      "name": "Wireless Bluetooth Earbuds",
-      "description": "High-quality wireless earbuds with advanced Bluetooth technology for seamless connectivity and crystal-clear sound.",
-      "price": 49.99,
-      "currencySymbol": "$",
-      "category": "Electronics",
-      "featuredImageUrl": "https://example.com/wireless_bluetooth_earbuds.jpg"
-    },
-    {
-      "_id": "b9b64eb9-2dd3-4c2c-aa3d-3f3143ec51b7",
-      "name": "Portable Power Bank Charger",
-      "description": "Compact and portable power bank charger with fast charging capabilities, ensuring your devices stay powered on the go.",
-      "price": 29.99,
-      "currencySymbol": "$",
-      "category": "Electronics",
-      "featuredImageUrl": "https://example.com/portable_power_bank_charger.jpg"
-    },
-    {
-      "_id": "32b51c98-2e4f-487d-a57c-1ff1f7b6881f",
-      "name": "Stainless Steel Water Bottle",
-      "description": "Durable stainless steel water bottle with a sleek design, perfect for staying hydrated throughout the day.",
-      "price": 19.99,
-      "currencySymbol": "$",
-      "category": "Home & Kitchen",
-      "featuredImageUrl": "https://example.com/stainless_steel_water_bottle.jpg"
-    },
-    {
-      "_id": "d3836eb7-871a-4d4c-b17e-2e4083664a3d",
-      "name": "Men's Casual Cotton T-Shirt",
-      "description": "Comfortable and stylish casual cotton t-shirt, ideal for everyday wear and versatile styling.",
-      "price": 14.99,
-      "currencySymbol": "$",
-      "category": "Clothing",
-      "featuredImageUrl": "https://example.com/mens_casual_cotton_tshirt.jpg"
-    },
-    {
-      "_id": "e6fd650b-3f35-4544-a0d5-f6fe3fb7ff58",
-      "name": "Women's Running Shoes",
-      "description": "High-performance running shoes designed for women, offering exceptional comfort and support during workouts.",
-      "price": 59.99,
-      "currencySymbol": "$",
-      "category": "Shoes",
-      "featuredImageUrl": "https://example.com/womens_running_shoes.jpg"
-    },
-    {
-      "_id": "c4b3fd0d-2b76-4893-895c-eeb22d60f68b",
-      "name": "Smartphone Tripod Stand",
-      "description": "Adjustable smartphone tripod stand for stable and hands-free photography and video recording.",
-      "price": 9.99,
-      "currencySymbol": "$",
-      "category": "Electronics",
-      "featuredImageUrl": "https://example.com/smartphone_tripod_stand.jpg"
-    },
-    {
-      "_id": "4ac53714-00e8-4c8a-92db-3dd0d81e6ba0",
-      "name": "Portable Bluetooth Speaker",
-      "description": "Portable Bluetooth speaker with immersive sound quality, perfect for outdoor gatherings and indoor entertainment.",
-      "price": 39.99,
-      "currencySymbol": "$",
-      "category": "Electronics",
-      "featuredImageUrl": "https://example.com/portable_bluetooth_speaker.jpg"
-    },
-    {
-      "_id": "1d6aa245-612f-465e-8d70-2d4f5f605071",
-      "name": "Cookware Set, Non-Stick Pots and Pans",
-      "description": "Complete cookware set featuring non-stick pots and pans for effortless cooking and easy cleanup.",
-      "price": 79.99,
-      "currencySymbol": "$",
-      "category": "Home & Kitchen",
-      "featuredImageUrl": "https://example.com/cookware_set_nonstick_pots_pans.jpg"
-    },
-    {
-      "_id": "1c12b9b7-61f6-4db2-b295-b4ddfa5c837f",
-      "name": "Fitness Tracker Watch",
-      "description": "Advanced fitness tracker watch with heart rate monitoring, activity tracking, and waterproof design, perfect for fitness enthusiasts.",
-      "price": 69.99,
-      "currencySymbol": "$",
-      "category": "Electronics",
-      "featuredImageUrl": "https://example.com/fitness_tracker_watch.jpg"
-    },
-    {
-      "_id": "222a4ed3-5b58-4eb8-bc90-8684b2f579c0",
-      "name": "Ceramic Coffee Mug Set",
-      "description": "Set of ceramic coffee mugs featuring a stylish design, perfect for enjoying your favorite hot beverages.",
-      "price": 24.99,
-      "currencySymbol": "$",
-      "category": "Home & Kitchen",
-      "featuredImageUrl": "https://example.com/ceramic_coffee_mug_set.jpg"
-    }
-  ]
-  
+[{
+    "_id": "40f2c61b-d9a5-4ff1-8447-1969d2dc19b3",
+    "name": "Wireless Bluetooth Earbuds",
+    "description": "High-quality wireless earbuds with advanced Bluetooth technology for seamless connectivity and crystal-clear sound.",
+    "price": 49.99,
+    "currencySymbol": "$",
+    "category": "Electronics",
+    "featuredImageUrl": "https://example.com/wireless_bluetooth_earbuds.jpg"
+  },
+  {
+    "_id": "b9b64eb9-2dd3-4c2c-aa3d-3f3143ec51b7",
+    "name": "Portable Power Bank Charger",
+    "description": "Compact and portable power bank charger with fast charging capabilities, ensuring your devices stay powered on the go.",
+    "price": 29.99,
+    "currencySymbol": "$",
+    "category": "Electronics",
+    "featuredImageUrl": "https://example.com/portable_power_bank_charger.jpg"
+  },
+  {
+    "_id": "32b51c98-2e4f-487d-a57c-1ff1f7b6881f",
+    "name": "Stainless Steel Water Bottle",
+    "description": "Durable stainless steel water bottle with a sleek design, perfect for staying hydrated throughout the day.",
+    "price": 19.99,
+    "currencySymbol": "$",
+    "category": "Home & Kitchen",
+    "featuredImageUrl": "https://example.com/stainless_steel_water_bottle.jpg"
+  }
+]
