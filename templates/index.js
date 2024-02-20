@@ -1,12 +1,8 @@
 const {
     Configs
 } = require("../modules")
+const Product = require('../models/products');
 const productCards = require("./components/productsCardGenerator")
-const {
-    readFileSync
-} = require("fs")
-const path = require('path')
-const products = JSON.parse(readFileSync(path.join(__dirname, "../data", "products.json")))
 
 const homePageObject = async () => {
     return {
@@ -16,6 +12,7 @@ const homePageObject = async () => {
 }
 
 async function htmlContent() {
+    const products = await Product.find();
     return `
             <p class="center info">
             Welcome to ${Configs.projectName}! This project demonstrates the utilization of the Paystack API for making and verifying payments, with a frontend built using EJS and ExpressJS for the backend. MongoDB is used as the database to store relevant data.    

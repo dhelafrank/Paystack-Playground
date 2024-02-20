@@ -1,4 +1,4 @@
-const Product = require('../models');
+const Product = require('../models/products');
 const productsData = require('../data/products.json');
 
 async function resetDatabase() {

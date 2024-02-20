@@ -1,4 +1,5 @@
 const Product = require('../models/products');
+const {Configs} = require('../modules')
 
 async function fetchAllProducts(req, res) {
   try {
@@ -18,6 +19,8 @@ async function fetchProductById(req, res) {
     if (!product) {
       return res.status(404).json({ error: 'Product not found' });
     }
+    
+    product.public_key = Configs.paystack.test.public
     
     res.status(200).json(product);
   } catch (error) {

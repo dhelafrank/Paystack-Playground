@@ -8,7 +8,11 @@ const {
 } = require('./modules/index')
 
 var viewsRouter = require('./routes/views');
-const { connectToDatabase } = require('./modules/database');
+var productsRouter = require('./routes/products')
+
+const {
+  connectToDatabase
+} = require('./modules/database');
 
 var app = express();
 
@@ -25,6 +29,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', viewsRouter);
+app.use('/products', productsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -44,7 +49,7 @@ app.use(function (err, req, res, next) {
 
 
 app.listen(Configs.port, async () => {
-// await connectToDatabase("You are good to go!")
-console.log(`Server is now listening on port ${Configs.port}`)
+  await connectToDatabase("You are good to go!")
+  console.log(`Server is now listening on port ${Configs.port}`)
 })
 module.exports = app;
