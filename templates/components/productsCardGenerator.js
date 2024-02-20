@@ -5,7 +5,8 @@ module.exports = async (productArray) => {
                     <h3>${product.name}</h3>
                     <div>
                         <p>${product.currencySymbol}${product.price}</p>
-                        <a href="" class="btn">Buy</a>
+
+                        <button class="btn product-buy-btn" product-name="${product.name}">Buy</button>
                     </div>
                 </div>`
 

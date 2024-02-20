@@ -1,0 +1,14 @@
+.customer-details-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.customer-details-form input{
+    margin: .3rem auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.customer-details-form button{
+    margin: 1rem auto auto auto;
+}
