@@ -39,7 +39,7 @@ export async function payWithPaystack(paymentInformation, btn) {
 
 async function decideVerification(ref) {
     try {
-        const response = await fetch("/payment/pay", {
+        const response = await fetch("/payment/verify", {
             method: "POST",
             headers: {
                 "Content-type": "Application/json"
@@ -49,17 +49,18 @@ async function decideVerification(ref) {
             })
         })
         const data = await response.json()
+        console.log(data);
+
+        
         modal.close()
-
-
         if (data.status == true) {
             setTimeout(() => {
                 modal.open("Payment Succesful", `<p class="splash">Payment complete!</p>`, () => {})
-            }, 1000)
-        }else{
+            }, 500)
+        } else {
             setTimeout(() => {
                 modal.open("Verification Error", `<p class="splash">Payment could not be verified</p>`, () => {})
-            }, 1000)
+            }, 500)
         }
     } catch (error) {
         console.error(error)
