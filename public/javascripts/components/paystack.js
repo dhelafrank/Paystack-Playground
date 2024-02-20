@@ -30,10 +30,38 @@ export async function payWithPaystack(paymentInformation, btn) {
         },
         callback: function (response) {
             btn.innerText = "Proceed to Payment"
-            modal.close()
-            modal.open("Payment Succesful", `<p class="splash">Payment complete! Reference: ${response.reference}</p>`, () => {})
+            decideVerification(response.reference)
         }
     });
 
     handler.openIframe();
+}
+
+async function decideVerification(ref) {
+    try {
+        const response = await fetch("/payment/pay", {
+            method: "POST",
+            headers: {
+                "Content-type": "Application/json"
+            },
+            body: JSON.stringify({
+                ref
+            })
+        })
+        const data = await response.json()
+        modal.close()
+
+
+        if (data.status == true) {
+            setTimeout(() => {
+                modal.open("Payment Succesful", `<p class="splash">Payment complete!</p>`, () => {})
+            }, 1000)
+        }else{
+            setTimeout(() => {
+                modal.open("Verification Error", `<p class="splash">Payment could not be verified</p>`, () => {})
+            }, 1000)
+        }
+    } catch (error) {
+        console.error(error)
+    }
 }

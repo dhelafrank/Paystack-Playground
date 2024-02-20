@@ -45,4 +45,4 @@ async function registerPayment(paymentInfo, customerDetails) {
     await paymentDetails.save()
 }
 
-module.exports = generatePaymentInformation
+module.exports = {generatePaymentInformation, paystackKeyFetch}

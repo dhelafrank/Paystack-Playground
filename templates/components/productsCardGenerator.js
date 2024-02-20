@@ -4,7 +4,7 @@ module.exports = async (productArray) => {
         let cardElement = `<div class="product-card">
                     <h3>${product.name}</h3>
                     <div>
-                        <p>${product.currencySymbol}${product.price}</p>
+                        <p>${product.currencySymbol}${(product.price).toLocaleString()}</p>
 
                         <button class="btn product-buy-btn" product-id="${product._id}">Buy</button>
                     </div>
