@@ -27,7 +27,7 @@ async function addNewCustomer(req, res, next) {
 
 async function newCustomer(customerDetailsReceived){
     let detailsAddon = {
-        _id: "cust-" += uuid,
+        _id: `csm_${uuid}`,
         transactions: []
     }
     let customerDetailsCompiled = {
@@ -39,6 +39,7 @@ async function newCustomer(customerDetailsReceived){
     return customerDetails
 }
 
+async function updateCustomer(){}
 
 module.exports = {
     addNewCustomer,

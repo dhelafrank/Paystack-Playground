@@ -9,6 +9,7 @@ const {
 
 var viewsRouter = require('./routes/views');
 var productsRouter = require('./routes/products')
+var paymentRouter = require('./routes/payment')
 
 const {
   connectToDatabase
@@ -30,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', viewsRouter);
 app.use('/products', productsRouter);
+app.use('/payment', paymentRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

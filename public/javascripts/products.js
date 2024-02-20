@@ -30,7 +30,8 @@ function formEvent() {
         processPayment({
             firstName,
             lastName,
-            email
+            email,
+            productId: e.target.getAttribute("product-id")
         })
     })
 }

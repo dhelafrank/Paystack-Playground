@@ -13,7 +13,8 @@ const Configs = {
             secret: process.env.LIVE_SECRET_KEY,
             public: process.env.LIVE_PUBLIC_KEY
         }
-    }
+    },
+    paymentMode:process.env.PAYSTACK_MODE
 }
 
 module.exports = {Configs}

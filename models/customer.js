@@ -17,10 +17,6 @@ const customerSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true
-    },
-    transactions: {
-        type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Payment' }],
-        default: []
     }
 });
 
