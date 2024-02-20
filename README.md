@@ -1,6 +1,6 @@
 # Paystack Playground
 
-Welcome to Paystack Playground! This project demonstrates the utilization of the Paystack API for making and verifying payments, with a frontend built using EJS and ExpressJS for the backend. MongoDB is used as the database to store relevant data.
+Welcome to Paystack Playground! This project demonstrates the utilization of the Paystack Inline API for making and verifying payments, with a frontend built using EJS and ExpressJS for the backend. MongoDB is used as the database to store relevant data.
 
 ## Features
 
