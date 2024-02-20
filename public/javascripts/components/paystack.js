@@ -1,10 +1,17 @@
+import {
+    modalClass
+} from "./modal.js";
+const modal = new modalClass
+
+
 export async function payWithPaystack(paymentInformation, btn) {
     const {
         key,
         email,
         amount,
         ref,
-        label
+        label,
+        currency
     } = paymentInformation
     let handler = PaystackPop.setup({
         key,
@@ -12,14 +19,19 @@ export async function payWithPaystack(paymentInformation, btn) {
         amount,
         ref,
         label,
+        currency,
         onClose: function () {
-            alert('Window closed.');
-            btn.innerText = "Proceed to Payment"
+            btn.innerText = "Payment Cancelled"
+            modal.close()
+            setTimeout(() => {
+                modal.open("Payment Cancelled", `<p class="splash">Go back to pay again</p>`, () => {})
+            }, 1000)
+
         },
         callback: function (response) {
-            let message = 'Payment complete! Reference: ' + response.reference;
-            alert(message);
             btn.innerText = "Proceed to Payment"
+            modal.close()
+            modal.open("Payment Succesful", `<p class="splash">Payment complete! Reference: ${response.reference}</p>`, () => {})
         }
     });
 

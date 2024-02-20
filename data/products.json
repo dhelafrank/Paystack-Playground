@@ -4,8 +4,8 @@
     "name": "Wireless Bluetooth Earbuds",
     "description": "High-quality wireless earbuds with advanced Bluetooth technology for seamless connectivity and crystal-clear sound.",
     "price": 49.99,
-    "currencySymbol": "$",
-    "currencyCode": "USD",
+    "currencySymbol": "₦",
+    "currencyCode": "NGN",
     "category": "Electronics",
     "featuredImageUrl": "https://example.com/wireless_bluetooth_earbuds.jpg"
   },
@@ -14,8 +14,8 @@
     "name": "Portable Power Bank Charger",
     "description": "Compact and portable power bank charger with fast charging capabilities, ensuring your devices stay powered on the go.",
     "price": 29.99,
-    "currencySymbol": "$",
-    "currencyCode": "USD",
+    "currencySymbol": "₦",
+    "currencyCode": "NGN",
     "category": "Electronics",
     "featuredImageUrl": "https://example.com/portable_power_bank_charger.jpg"
   },
@@ -24,8 +24,8 @@
     "name": "Stainless Steel Water Bottle",
     "description": "Durable stainless steel water bottle with a sleek design, perfect for staying hydrated throughout the day.",
     "price": 19.99,
-    "currencySymbol": "$",
-    "currencyCode": "USD",
+    "currencySymbol": "₦",
+    "currencyCode": "NGN",
     "category": "Home & Kitchen",
     "featuredImageUrl": "https://example.com/stainless_steel_water_bottle.jpg"
   }

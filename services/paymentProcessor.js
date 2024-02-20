@@ -10,9 +10,6 @@ const {
     newCustomer
 } = require("../controllers/customer");
 
-//Create new customer information
-//create new payment information with customer information
-
 async function generatePaymentInformation(customerDetailsGotten, productId) {
     const customerDetails = await newCustomer(customerDetailsGotten)
     const product = await Product.findById(productId);
@@ -21,6 +18,7 @@ async function generatePaymentInformation(customerDetailsGotten, productId) {
         key: paystackKeyFetch().public,
         email: customerDetails.email,
         amount: product.price * 100,
+        currency: product.currencyCode,
         ref: `trx_${uuidv4()}`,
         label: `${customerDetails.firstName} ${customerDetails.lastName}`
     }
