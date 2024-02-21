@@ -39,7 +39,8 @@ async function registerPayment(paymentInfo, customerDetails) {
         _id: Date.now(),
         transactionReference: paymentInfo.ref,
         paymentStatus: "pending",
-        customerId: customerDetails._id
+        customerId: customerDetails._id,
+        timestamp:Date.now()
     }
     const paymentDetails = new Payment(paymentDetailsCompiled)
     await paymentDetails.save()

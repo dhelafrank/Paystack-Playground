@@ -6,7 +6,7 @@ Welcome to Paystack Playground! This project demonstrates the utilization of the
 
 - **Payment Integration**: Integrate Paystack API seamlessly for making payments.
 - **Payment Verification**: Verify payments using Paystack's robust verification system.
-- **Frontend**: User-friendly interface built with EJS for a smooth user experience.
+- **Frontend**: User interface built with EJS
 - **Backend**: ExpressJS backend for handling API requests and business logic.
 - **Database**: MongoDB integration for storing payment-related data securely.
 
@@ -39,6 +39,5 @@ This project is licensed under the MIT License - see the [License](LICENSE)
 <br>
 <br>
 <br>
-<hr>
 <hr>
 Note: This project is for demonstration purposes only and should not be used in production environments without proper security measures.

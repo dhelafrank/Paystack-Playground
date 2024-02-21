@@ -25,7 +25,7 @@ export async function payWithPaystack(paymentInformation, btn) {
             modal.close()
             setTimeout(() => {
                 modal.open("Payment Cancelled", `<p class="splash">Go back to pay again</p>`, () => {})
-            }, 1000)
+            }, 500)
 
         },
         callback: function (response) {

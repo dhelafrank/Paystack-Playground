@@ -25,10 +25,20 @@ async function addNewCustomer(req, res, next) {
     }
 }
 
-async function newCustomer(customerDetailsReceived){
+async function newCustomer(customerDetailsReceived) {
+    async function checkCustomerExistence() {
+        let customer = await Customer.find({
+            email: customerDetailsReceived.email
+        })
+        return customer
+    }
+    let customerExistence = await checkCustomerExistence()
+    if (customerExistence.length > 0) {
+        return customerExistence[0]
+    }
+
     let detailsAddon = {
         _id: `csm_${uuid}`,
-        transactions: []
     }
     let customerDetailsCompiled = {
         ...customerDetailsReceived,
@@ -39,7 +49,7 @@ async function newCustomer(customerDetailsReceived){
     return customerDetails
 }
 
-async function updateCustomer(){}
+async function updateCustomer() {}
 
 module.exports = {
     addNewCustomer,

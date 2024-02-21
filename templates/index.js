@@ -17,6 +17,7 @@ async function htmlContent() {
             <p class="center info">
             Welcome to ${Configs.projectName}! This project demonstrates the utilization of the Paystack API for making and verifying payments, with a frontend built using EJS and ExpressJS for the backend. MongoDB is used as the database to store relevant data.    
             </p>
+            ${paymentEnvCheck()}
             <div class="product-cards-container">
                 ${await productCards(products)}
             </div>
@@ -25,6 +26,17 @@ async function htmlContent() {
             `
 }
 
+function paymentEnvCheck(){
+    if(Configs.paymentMode == "test"){
+        return envText("All payments are in test mode!")
+    }
+    return envText("Live payments are enabled!")
+}
+
+function envText(textRecieved){
+    let text = "Data stored is cleared periodically"
+    return `<p>${textRecieved}. ${text}</p>`
+}
 module.exports = {
     homePageObject
 }

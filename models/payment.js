@@ -11,7 +11,7 @@ const paymentSchema = new mongoose.Schema({
     },
     paymentStatus: {
         type: String,
-        enum: ["pending", "completed", "failed"],
+        enum: ["pending", "completed", "failed", "abandoned", "processing","success"],
         required: true,
         default: "pending"
     },
@@ -19,7 +19,13 @@ const paymentSchema = new mongoose.Schema({
         type: String,
         ref: 'Customer',
         required: true
+    },
+    timestamp: {
+        type: Number,
+        required: true
     }
+}, {
+    timestamps: true
 });
 
 const Payment = mongoose.model('Payment', paymentSchema);
