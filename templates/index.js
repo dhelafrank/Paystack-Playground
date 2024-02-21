@@ -34,8 +34,8 @@ function paymentEnvCheck(){
 }
 
 function envText(textRecieved){
-    let text = "Data stored is cleared periodically"
-    return `<p>${textRecieved}. ${text}</p>`
+    let text = "and data stored is cleared periodically"
+    return `<p class="center">${textRecieved}, ${text}</p>`
 }
 module.exports = {
     homePageObject

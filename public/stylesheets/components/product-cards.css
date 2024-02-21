@@ -49,4 +49,7 @@
         width: calc(var(--card-dimension) + 3rem);
         margin: .5rem .5rem;
     }
+    .product-cards-container .product-card div {
+        width:var(--card-dimension);
+    }
 }
