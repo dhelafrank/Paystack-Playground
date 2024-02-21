@@ -55,7 +55,7 @@ async function decideVerification(ref) {
         modal.close()
         if (data.status == true) {
             setTimeout(() => {
-                modal.open("Payment Succesful", `<p class="splash">Payment complete!</p>`, () => {})
+                modal.open("Payment Succesful", `<p class="splash">Thank you for your payment!</p>`, () => {})
             }, 500)
         } else {
             setTimeout(() => {
