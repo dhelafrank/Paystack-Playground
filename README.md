@@ -32,6 +32,13 @@ npm start
 ## Contribution
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
+<br>
+<div>
+<a href="https://wakatime.com/badge/github/dhelafrank/Paystack-Playground"><img src="https://wakatime.com/badge/github/dhelafrank/Paystack-Playground.svg?style=for-the-badge" alt="wakatime"></a>
+
+Total Time Spent on the Project
+</div>
+
 ## License
 This project is licensed under the MIT License - see the [License](LICENSE)
  file for details.
